@@ -151,7 +151,7 @@ export default function ShopPage() {
             />
           </div>
           <div className="w-full sm:w-[200px]">
-            <Select value={sortOption} onValueChange={setSortOption}>
+            <Select value={sortOption} onValueChange={(val) => val && setSortOption(val)}>
               <SelectTrigger>
                 <SelectValue placeholder="Sort by" />
               </SelectTrigger>
